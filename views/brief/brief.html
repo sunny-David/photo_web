@@ -1,0 +1,86 @@
+<ion-view title="摄影师简介">
+
+    <ion-nav-bar class="bar-assertive">
+        <ion-nav-back-button>摄影师</ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-content id="brief">
+        <div class="list">
+            <div class="item item-avatar-left brief_head">
+                <img ng-src="{{product.icon}}"/>
+                <h2>{{product.name}}</h2>
+                <p>嫁拍只为你最美的一天</p>
+                <p>热度 <i class="icon ion-ios-star assertive"></i><i class="icon ion-ios-star assertive"></i><i class="icon ion-ios-star assertive"></i><i class="icon ion-ios-star assertive"></i><i class="icon ion-ios-star assertive"></i></p>
+            </div>
+            <a class="item item-icon-left favorable" ui-sref="reservation">
+                <i class="icon ion-ios-information assertive"></i>特惠套餐A:&nbsp;&nbsp;<strong>2999元</strong>
+                <span>详情<i> ></i></span>
+            </a>
+            <a class="item item-icon-left favorable" ui-sref="reservation">
+                <i class="icon ion-ios-information assertive"></i>特惠套餐B:&nbsp;&nbsp;<strong>3699元</strong>
+                <span>详情<i> ></i></span>
+            </a>
+            <a class="item item-icon-left favorable" ui-sref="reservation">
+                <i class="icon ion-ios-information assertive"></i>特惠套餐C:&nbsp;&nbsp;<strong>4999元</strong>
+                <span>详情<i> ></i></span>
+            </a>
+            <a class="item item-icon-left favorable" ui-sref="reservation">
+                <i class="icon ion-ios-information assertive"></i>嫁拍优选:&nbsp;&nbsp;<strong>6999元</strong>
+                <span>详情<i> ></i></span>
+            </a>
+            <a class="item item-icon-left favorable" ui-sref="reservation">
+                <i class="icon ion-ios-information assertive"></i>嫁拍特选:&nbsp;&nbsp;<strong>9999元</strong>
+                <span>详情<i> ></i></span>
+            </a>
+        </div>
+        <div class="item tabs tabs-icon-left brief_bottom">
+            <div class="tab-item">
+                <i class="icon ion-ios-camera assertive"></i><span class="assertive"> 5件</span>
+            </div>
+            <div class="tab-item">
+                <i>好评:</i><span> 3</span>
+            </div>
+            <div class="tab-item">
+                <i>中评:</i><span> 0</span>
+            </div>
+            <div class="tab-item">
+                <i>差评:</i><span> 0</span>
+            </div>
+        </div>
+
+        <div class="list card">
+            <div class="item pic">
+                <span>&nbsp;&nbsp;唯美韩式</span>
+            </div>
+            <div class="item item-image">
+                <img src="images/wmhs.jpg"/>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item pic">
+                <span>&nbsp;&nbsp;生如夏花</span>
+            </div>
+            <div class="item item-image">
+                <img src="images/srxh.jpg"/>
+            </div>
+        </div>
+    </ion-content>
+    <div class="row foot">
+        <div class="col foot_list">
+            <p>
+                <i class="icon ion-ios-telephone"></i> 客服
+            </p>
+        </div>
+        <div class="col foot_list">
+            <p class="yuding">
+                <i class="icon ion-android-attach"></i> 预定
+            </p>
+        </div>
+        <div class="col foot_list">
+            <p class="fenx">
+                <i class="icon ion-ios-upload-outline"></i> 分享
+            </p>
+        </div>
+    </div>
+
+</ion-view>

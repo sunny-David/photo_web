@@ -1,0 +1,28 @@
+<ion-view title="{{product.style}}">
+
+    <ion-nav-bar class="bar-assertive">
+        <ion-nav-back-button>分类</ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-content>
+        <div class="list card">
+            <div class="item item-image">
+                <img ng-src="{{product.images}}"/>
+            </div>
+            <div class="item item-avatar-left">
+                <img ng-src="{{product.icon}}"/>
+                <h2>{{product.name}}</h2>
+                <p>{{product.desc}}</p>
+            </div>
+            <div class="item tabs tabs-icon-left">
+                <div class="tab-item">
+                    <i class="icon ion-thumbsup assertive"></i> 赞
+                </div>
+                <div class="tab-item">
+                    <i class="icon ion-chatbox energized"></i> 评论
+                </div>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-view>

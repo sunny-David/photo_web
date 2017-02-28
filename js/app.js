@@ -1,0 +1,48 @@
+/**
+ * Created by hxsd on 2016/9/29.
+ */
+var myapp=angular.module("myapp",["ionic"]);
+//配置路由
+myapp.config(function($stateProvider,$urlRouterProvider){
+    $stateProvider.state("tabs",{
+        url:"/tabs",
+        abstract:true,
+        templateUrl:"views/tabs/tabs.html"
+    });
+    $stateProvider.state("tour",{
+        url:"/tour",
+        templateUrl:"views/tour/tour.html",
+        controller:"tourCtrl"
+    });
+    $stateProvider.state("tabs.home",{
+        url:"/home",
+        views:{"tab-home":{templateUrl:"views/home/home.html"}}
+    });
+    $stateProvider.state("tabs.classify",{
+        url:"/classify",
+        views:{"tab-classify":{templateUrl:"views/classify/classify.html",controller:"classifyCtrl"}}
+    });
+    $stateProvider.state("tabs.style",{
+        url:"/style?:style",
+        views:{"tab-classify":{templateUrl:"views/style/style.html",controller:"styleCtrl"}}
+    });
+    $stateProvider.state("tabs.cameraman",{
+        url:"/cameraman",
+        views:{"tab-cameraman":{templateUrl:"views/cameraman/cameraman.html",controller:"cameramanCtrl"}}
+    });
+    $stateProvider.state("tabs.brief",{
+        url:"/brief?:name",
+        views:{"tab-cameraman":{templateUrl:"views/brief/brief.html",controller:"briefCtrl"}}
+    });
+    $stateProvider.state("tabs.me",{
+        url:"/me",
+        views:{"tab-me":{templateUrl:"views/me/me.html"}}
+    });
+    $stateProvider.state("tabs.logIn",{
+        url:"/logIn",
+        views:{"tab-me":{templateUrl:"views/logIn/logIn.html"}}
+    });
+    //默认路由
+    $urlRouterProvider.otherwise("/tour");
+});
+

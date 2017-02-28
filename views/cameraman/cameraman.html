@@ -1,0 +1,21 @@
+<ion-view title="摄影师">
+
+    <ion-nav-bar class="bg-color">
+        <ion-nav-back-button>后退</ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-content>
+        <div class="list card" ng-repeat="content in data.cameraman" ng-click="toDetail(content)">
+                <div class="item item-avatar-left">
+                    <img ng-src="{{content.icon}}"/>
+                    <!--<a  href="#/tabs/brief">sd</a>-->
+                    <h2><span>{{content.name}}</span><strong class="txt-color">{{content.price}}起</strong></h2>
+                    <p>{{content.title}}</p>
+                </div>
+                <div class="item item-image">
+                    <img ng-src="{{content.imgsrc}}"/>
+                </div>
+        </div>
+    </ion-content>
+
+</ion-view>

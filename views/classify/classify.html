@@ -1,0 +1,16 @@
+<ion-view title="分类">
+
+    <ion-nav-bar class="bar-assertive">
+        <ion-nav-back-button>后退</ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-content>
+        <div  class="list card" ng-repeat="content in data.classify" ng-click="toDetail(content)">
+            <a class="item item-image classify_pic">
+                <img ng-src="{{content.imgsrc}}" class="classify_img"/>
+                <span>{{content.style}}<i>></i></span>
+            </a>
+        </div>
+    </ion-content>
+
+</ion-view>
